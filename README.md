@@ -4,19 +4,17 @@ Nessa etapa, vamos evoluir o projeto anterior e contemplar um ambiente de desenv
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+Nome: Mateus Souza Campos
+Matricula: 896645
+Proposta de projeto escolhida: Página de noticias.
 
 **Print do teste da API com visualização do JSON**
 
-<<  COLOQUE A IMAGEM AQUI >>
+>![Print 1](prints/1.png)
 
 **Print da aba NETWORK com requisições Fetch/XHR**
 
-<<  COLOQUE A IMAGEM AQUI >>
-
+![Print 2](prints/2.png)
 ## **Orientações Gerais**
 
 Nesse projeto você vai encontrar a seguinte estrutura base:
