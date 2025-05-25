@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Futebol de Minas</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Logo centralizada -->
+      <a class="navbar-brand mx-auto" href="index.html">
+        <img src="fotos/logotipo.png" alt="Logo" height="100">
+      </a>
+  
+      <!-- Pesquisa à direita -->
+      <form class="d-flex" role="search" id="form-pesquisa">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar notícias..." aria-label="Pesquisar" id="barra-pesquisa">
+        <button class="btn btn-outline-light" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+  
+  <!-- Carrossel de Manchetes -->
+  <div class="container my-4">
+    <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="carrossel1.html">
+            <img src="fotos/kaiojorge.png" class="d-block w-100" alt="Slide 1">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>ESTREIA COM VITÓRIA NA COPA DO BRASIL</h5>
+            <p>Com show de Kaio Jorge o Cruzeiro vence o Vila Nova no Mineirão</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <a href="carrossel2.html">
+            <img src="fotos/dudu.png" class="d-block w-100" alt="Slide 2">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>DUDU PODE PINTAR NO GALO!</h5>
+            <p>A pedido de Cuca, Dudu pode jogar no Atlético MG</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <a href="carrossel3.html">
+            <img src="fotos/americamg.png" class="d-block w-100" alt="Slide 3">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>AMÉRICA ENFRENTA OPERÁRIO NO BRASILEIRÃO A2</h5>
+            <p>Veja onde assistir, horário e as prováveis escalações.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botões de navegação -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Filtros por time -->
+  <div class="text-center my-4">
+    <a href="cruzeiro.html" class="btn btn-outline-primary mx-2">Cruzeiro</a>
+    <a href="atletico.html" class="btn btn-outline-primary mx-2">Atlético</a>
+    <a href="america.html" class="btn btn-outline-primary mx-2">América</a>
+  </div>
+
+  <!-- Lista dinâmica de jogadores -->
+  <div class="container my-5">
+    <h1 class="mb-4">Lista de Jogadores</h1>
+    <ul id="lista-jogadores" class="list-group"></ul>
+  </div>
+
+  <!-- Últimas Notícias -->
+  <div class="container mt-5">
+    <h1 class="mb-4">Últimas Notícias</h1>
+    <div class="row g-4">
+
+      <!-- Notícia 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="fotos/gabigol.png" class="card-img-top" alt="Notícia 1">
+          <div class="card-body">
+            <h5 class="card-title">Gabigol reencontra Flamengo!</h5>
+            <p class="card-text">O Mineirão será palco de um reencontro emocionante hoje, às 20h30, pela sétima rodada do Brasileirão.</p>
+            <a href="noticia1.html" class="btn btn-primary">Ler mais</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notícia 2 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="fotos/atletico.png" class="card-img-top" alt="Notícia 2">
+          <div class="card-body">
+            <h5 class="card-title">Atlético tenta reagir no Brasileiro!</h5>
+            <p class="card-text">Em situação delicada no Brasileirão, ocupando a 17ª colocação após seis rodadas e amargando a zona de rebaixamento</p>
+            <a href="noticia2.html" class="btn btn-primary">Leia mais</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notícia 3 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="fotos/americafeminino.png" class="card-img-top" alt="Notícia 3">
+          <div class="card-body">
+            <h5 class="card-title">América busca 3° vitória seguida no Brasileirão</h5>
+            <p class="card-text">Embalado por duas vitórias consecutivas, o América Feminino busca manter a boa fase e conquistar o terceiro triunfo seguido no Campeonato Brasileiro.</p>
+            <a href="noticia3.html" class="btn btn-primary">Leia mais</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="text-white text-center p-4 mt-5 bg-dark">
+    <p class="mb-0">&copy; Aluno: Mateus Souza Campos.</p>
+    <p class="mb-0">&copy; Curso: Análise e Desenvolvimento de Sistemas</p>
+    <p class="mb-0">&copy; Turno: Manhã</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/scripts/app.js"></script>
+</body>
+</html>
